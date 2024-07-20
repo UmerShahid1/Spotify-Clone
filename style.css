@@ -1,0 +1,548 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color: #000000;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: #1d1d1d;
+    padding: 24px;
+}
+.sidebar .logo img{
+    width: 130px;
+}
+.sidebar .navigation{
+    margin-left: 10px;
+}
+.sidebar .navigation ul{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar .navigation ul li{
+    padding: 10px opx;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sidebar .navigation ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.sidebar .navigation ul li .fa{
+    margin-right:10px ;
+} 
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus{
+color: #ffffff;
+}
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa{
+color: #dddddd;
+}
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:active .fa:active,
+.sidebar .navigation ul li a:focus .fa:focus{
+color: #ffffff;
+}
+.playlist{
+    margin-left: 10px;
+    margin-top: 60px;
+}
+.playlist ul{
+    top: 20;
+list-style: none;
+}
+.playlist ul li{
+    margin-top: 15px;
+}
+.playlist ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+}
+.cookies{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 160px;
+}
+.cookies ul{
+    list-style: none;
+    }
+    .cookies ul li{
+        margin-top: 10px;
+    }
+    .cookies ul li a{
+        color: #b3b3b3;
+        text-decoration: none;
+    }
+    
+
+.main-container{
+    margin-left: 250px;
+    margin-bottom: 100px;
+}
+.main-container .top-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1d1d1d;
+    height: 60px;
+    align-items:center;
+    padding: 14px 30px;
+}
+.main-container .top-bar .prev-nex{
+    display: flex;
+    cursor: not-allowed;
+}
+.main-container .top-bar .prev-nex .left-chev{
+    margin-right: 10px;
+    font-size: 16px;
+    color: #dddddd;
+    font-weight: 100;
+    background-color: #000000;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+}
+.main-container .top-bar .prev-nex .right-chev{
+    margin-left: 10px;
+    font-size: 16px;
+    color: #dddddd;
+    font-weight: 100;
+    background-color: #000000;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+}
+.main-container .top-bar .navbar{
+    margin-left: 25px;
+    padding: 14px 30px;
+}
+.main-container .top-bar .navbar .signup{
+    color: #b3b3b3;
+    font-size: 15px;
+    font-weight:bold;
+    text-decoration: none;
+}
+.main-container .top-bar .navbar .signup:hover{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.main-container .top-bar .navbar .login{
+background-color: #ffffff;
+color: #121212;
+padding: 14px 30px;
+border-radius: 50px;
+margin-left: 35px;
+text-decoration: none;
+font-size: 16px;
+font-weight: 700;
+}
+.main-container .top-bar .navbar .login:hover{
+    background-color: #dddddd;
+    color: #121212;
+    padding: 14px 30px;
+    border-radius: 50px;
+    margin-left: 35px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    }
+
+.preview{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}    
+.preview .text h5{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform:uppercase;
+    margin-bottom: 10px;
+}
+.preview .text p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.preview .prev-btn{
+background-color: #ffffff;
+padding: 14px 30px;
+border-radius: 50px;
+margin-left: 35px;
+}
+.preview .prev-btn:hover{
+    background-color: #dddddd;
+}
+.preview .prev-btn a{
+    color: #121212;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;   
+}
+
+
+/****/
+.artists{
+padding: 20px 40px;
+}
+.artists .list{
+    display: flex;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.artists .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.artists .top a{
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.artists .top a:hover{
+    color: #dddddd;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 50px;
+    text-decoration: underline;
+}
+.artists .top p{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.artists .list .artist-profile{
+    justify-content: space-evenly;
+    min-width: 140px;
+    width: 160px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    padding: 10px;
+    border-radius: 10px;
+}
+.artists .list .artist-profile:hover{
+    background-color: #1f1f1f;
+    
+}
+.artists .artist-profile img{
+border-radius: 100px;
+height: 150px;
+width: 150px;
+}
+.artists .artist-profile .play{
+    position: relative;
+}
+.artists .artist-profile .play .fa{
+    position: absolute;
+    right: 3px;
+    top: -50px;
+    padding:10px 12px;
+    background-color: #1db954;
+    border-radius: 100%;
+    transition: all ease 0.4s;
+    opacity: 0;
+}
+.artists .list .artist-profile:hover .play .fa{
+    opacity: 1;
+    transform:translateY(-20px);
+}
+.artists .artist-profile:hover .play .fa{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.artists .list .artist-profile .artist-name{
+    margin-left: 18px;
+}
+.artists .list .artist-profile .artist-name span{
+    color: #dddddd;
+    font-size: 16px;
+    font-weight: bold;
+}
+.artists .list .artist-profile .artist-name p{
+    color: #dddddd;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+    /**Albums**/
+    .album{
+        padding: 20px 40px;
+        }
+        .album .list{
+            display: flex;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .album .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .album .top a{
+            text-decoration: none;
+            color: #dddddd;
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+        .album .top a:hover{
+            color: #dddddd;
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 50px;
+            text-decoration: underline;
+        }
+        .album .top p{
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+        .album .list .album-profile{
+            justify-content: space-evenly;
+            min-width: 150px;
+            width: 180px;
+            cursor: pointer;
+            transition: all ease 0.4s;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .album .list .album-profile:hover{
+            background-color: #1f1f1f;
+            
+        }
+        .album .album-profile img{
+        border-radius: 10px;
+        height: 180px;
+        width: 180px;
+        }
+        .album .album-profile .play{
+            position: relative;
+        }
+        .album .album-profile .play .fa{
+            position: absolute;
+            right: 3px;
+            top: -50px;
+            padding:10px 12px;
+            background-color: #1db954;
+            border-radius: 100%;
+            transition: all ease 0.4s;
+            opacity: 0;
+        }
+        .album .list .album-profile:hover .play .fa{
+            opacity: 1;
+            transform:translateY(-20px);
+        }
+        .album .album-profile:hover .play .fa{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        .album .list .album-profile .album-name{
+            margin-left: 5px;
+        }
+        .album .list .album-profile .album-name span{
+            color: #dddddd;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .album .list .album-profile .album-name p{
+            color: #dddddd;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+
+        /* /**** */
+        /**Playlists**/
+    .spotify-playlist{
+        padding: 20px 40px;
+        }
+        .spotify-playlist .list{
+            display: flex;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .spotify-playlist .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .spotify-playlist .top a{
+            text-decoration: none;
+            color: #dddddd;
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+        .spotify-playlist .top a:hover{
+            color: #dddddd;
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 50px;
+            text-decoration: underline;
+        }
+        .spotify-playlist .top p{
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+        .spotify-playlist .list .playlist-profile{
+            justify-content: space-evenly;
+            min-width: 150px;
+            width: 180px;
+            cursor: pointer;
+            transition: all ease 0.4s;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .spotify-playlist .list .playlist-profile:hover{
+            background-color: #1f1f1f;
+            
+        }
+        .spotify-playlist .playlist-profile img{
+        border-radius: 10px;
+        height: 180px;
+        width: 180px;
+        }
+        .spotify-playlist .playlist-profile .play{
+            position: relative;
+        }
+        .spotify-playlist .playlist-profile .play .fa{
+            position: absolute;
+            right: 3px;
+            top: -50px;
+            padding:10px 12px;
+            background-color: #1db954;
+            border-radius: 100%;
+            transition: all ease 0.4s;
+            opacity: 0;
+        }
+        .spotify-playlist .list .playlist-profile:hover .play .fa{
+            opacity: 1;
+            transform:translateY(-20px);
+        }
+        .spotify-playlist .playlist-profile:hover .play .fa{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        .spotify-playlist .list .playlist-profile .playlist-name{
+            margin-left: 10px;
+        }
+        .spotify-playlist .list .playlist-profile .playlist-name span{
+            color: #dddddd;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .spotify-playlist .list .playlist-profile .playlist-name p{
+            color: #dddddd;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+    
+
+/****/
+.footer{
+    /* padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px; */
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #b3b3b3;
+}
+.footer span{
+    color: #dddddd;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer ul li{
+    margin-top: 15px;
+}
+.footer ul li a{
+    list-style: none;
+    color: #b3b3b3;
+    text-decoration: none; 
+    font-size: 15px; 
+}
+.footer ul li a:hover{
+    list-style: none;
+    color: #ffffff;
+    text-decoration: underline; 
+    font-size: 15px; 
+}
+.footer .col-2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #dddddd;
+}
+.footer .col-2 ul li i{
+    margin-left: 25px;
+    font-size: 18px;
+    background-color: #1f1f1f;
+    padding: 12px 12px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.footer .col-2 ul li i:hover{
+    margin-left: 25px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    padding: 12px 12px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.after-footer{
+    margin-top: 30px;
+}
+.copyright p{
+    color: #b3b3b3;
+    font-size: 15px;
+
+}
+.designer{
+    color: #b3b3b3;
+    font-size: 15px;  
+}
+.after-foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.designer span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #1db954;
+}
